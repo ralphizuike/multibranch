@@ -56,8 +56,7 @@ pipeline{
                          }
                      }
                      stage('jenkinsID'){
-                         steps{
-                             sh 'jenkins id'
+                          steps{
                              sh 'ls'
                          }
                      }
