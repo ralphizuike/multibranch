@@ -3,7 +3,7 @@ pipeline{
      	stages{
      		stage('version'){
      			steps{
-     				checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'GitHUB-CREDENTIALS', url: 'https://github.com/ralphizuike/parallel_pipeline.git']]])
+     				checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'GitHUB-CREDENTIALS', url: 'https://github.com/ralphizuike/multibranch.git']]])
      			}
      		}
      		stage('parallel-job'){
