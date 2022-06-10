@@ -10,17 +10,17 @@ pipeline{
      			parallel{
      				stage('sub-job1'){
      					steps{
-     						echo 'action1'
+     						sh 'lscpu'
      					}
      				}
      				stage('sub-job2'){
      					steps{
-     						echo 'action2'
+     						sh'date'
      					}
      				}
      				stage('sub-job3'){
      					steps{
-     						echo 'action3'
+     						sh 'whoami'
 
      					}
      				}
@@ -55,8 +55,8 @@ pipeline{
                              sh 'lscpu'
                          }
                      }
-                     stage('jenkinsID'){
-                          steps{
+                     stage('list-info'){
+                         steps{
                              sh 'ls'
                          }
                      }
