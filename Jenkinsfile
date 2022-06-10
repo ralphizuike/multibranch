@@ -15,7 +15,7 @@ pipeline{
      				}
      				stage('sub-job2'){
      					steps{
-     						sh'date'
+     						sh 'date'
      					}
      				}
      				stage('sub-job3'){
