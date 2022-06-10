@@ -55,7 +55,7 @@ pipeline{
                              sh 'lscpu'
                          }
                      }
-                     stage('list-infor'){
+                     stage('list-info'){
                          steps{
                              sh 'ls'
                          }
