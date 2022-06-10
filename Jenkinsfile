@@ -8,17 +8,17 @@ pipeline{
      		}
      		stage('parallel-job'){
      			parallel{
-     				stage('sub-job1'){
+     				stage('cpu-infor'){
      					steps{
      						sh 'lscpu'
      					}
      				}
-     				stage('sub-job2'){
+     				stage('date'){
      					steps{
-     						sh'date'
+     						sh 'date'
      					}
      				}
-     				stage('sub-job3'){
+     				stage('location'){
      					steps{
      						sh 'whoami'
 
